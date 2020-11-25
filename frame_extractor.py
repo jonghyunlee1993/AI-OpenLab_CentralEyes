@@ -27,7 +27,7 @@ def extract_frames(vidcap, destination, step=1):
 			cv2.imwrite(f"{destination}/frame_{count:06}.jpg", frame)
 			count += 1
 		except:
-			pass
+			break
 
 	print("Done!")
 
